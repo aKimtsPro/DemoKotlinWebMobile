@@ -15,12 +15,12 @@ fun main() {
     rslt = (a % b).toDouble()
 
     // opérateur comparaison:
-    println( a == b )   // vérifie l'egalité via .equals
+    println( a == b )   // vérifie l'egalité via .equals(...)
     println( a === b )  // vérifie si la référence est la même
     println( a != b )
     println( a !== b )
 
-    println( a < b )
+    println( a < b )    // utilise la methode compareTo(...)
     println( a <= b )
     println( a > b )
     println( a >= b )
