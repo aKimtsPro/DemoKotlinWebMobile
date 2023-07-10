@@ -28,7 +28,7 @@ fun main() {
         println(element)
     }
 
-    for ( index in arrayOf(12,0,15).indices ){
+    for ( index in arrayOf(12,0,15).joinToString().indices ){
         println(index)
     }
 
