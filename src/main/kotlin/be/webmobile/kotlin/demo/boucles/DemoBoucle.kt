@@ -32,7 +32,7 @@ fun main() {
         println(index)
     }
 
-    for ( (value, index) in arrayOf("ok","bonjour", "au revoir").withIndex() ){
+    for ( (index, value) in arrayOf("ok","bonjour", "au revoir").withIndex() ){
         println( "$index - $value" )
     }
 
