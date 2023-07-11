@@ -46,7 +46,7 @@ fun main() {
     // D'autres opérateurs intéressants
     // Opérateurs de range: voir progresssion/Progression.kt
 
-    // Opérateurs d'appartenance
+    // Opérateurs d'appartenance (.contains(...))
     println(5 in (1 until 10)) // vérifie si le Range contient 5
     println(5 !in (1 until 10)) // vérifie si le Range ne contient pas 5
 
@@ -61,7 +61,7 @@ fun main() {
     val varNonNull: String? = "pas null"
 
     // Je ne peux pas faire un appel direct au variable/methode sur une valeur nullable
-//    println(varNull.length)
+//    println( varNull.length )
 
     // Je peux faire appel grâce à une de ces 2 options:
 

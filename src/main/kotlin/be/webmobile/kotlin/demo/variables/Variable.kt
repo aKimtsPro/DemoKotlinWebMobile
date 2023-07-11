@@ -33,9 +33,7 @@ fun main( args: Array<String> ) {
     var booleanNullable : Boolean?
     booleanNullable = null;
 
-
     // Conversion
     reelPrecis = entier3.toDouble()
-
 
 }

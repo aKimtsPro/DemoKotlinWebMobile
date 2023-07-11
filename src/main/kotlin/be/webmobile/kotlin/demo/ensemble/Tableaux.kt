@@ -7,6 +7,7 @@ fun main() {
     // Si une lambda doit être passé en dernier param, elle est être sortie des parenthèse
 //    EXEMPLE: val tab: Array<String> = Array(3, { index -> "salut" })
 //    Devient:
+
     val tab: Array<String> = Array(3) { "salut" } // { index -> "salut" }
     // {"salut", "salut", "salut"}
     val tab3 = Array(3) { it+1 } // { index -> index+1 } // it renvoie à la valeur du param de la lambda
@@ -16,6 +17,10 @@ fun main() {
 //    tab.set(0, "ok") // pareil
     tab[1] = "ko"
 //    tab.set(1, "ko") // pareil
+
+    for (element in tab){
+        println(element)
+    }
 
     for ((index, value) in tab.withIndex()) {
         println( "$index - $value" )
