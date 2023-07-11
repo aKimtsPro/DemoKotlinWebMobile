@@ -58,4 +58,35 @@ fun main() {
     mutableMap.put("michel", 20) // si la clef n'existe pas, ajoute
     mutableMap.put("michel", 15) // si la clef existe, modifie
 
+
+//    {
+//        "java" => {
+//            "luc" => 15
+//            "luc" => 15
+//            "luc" => 15
+//        },
+//        "js" => {
+//            "luc" => 7,
+//            ...
+//        }
+//    }
+
+    val mapNote: Map<String, MutableMap<String, Int>>
+
+    val listCours = listOf("java", "js", "kotlin")
+    val listPers = listOf("luc", "marie", "dom")
+
+    mapNote = mapOf(
+       listCours[0] to mutableMapOf(),
+       listCours[1] to mutableMapOf(),
+       listCours[2] to mutableMapOf()
+    )
+
+    val coursJava = mapNote[listCours[0]]
+
+    coursJava?.put("luc", 150)
+
+    mapNote["java"]?.get("luc")
+
+
 }
