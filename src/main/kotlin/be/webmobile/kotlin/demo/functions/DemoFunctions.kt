@@ -29,6 +29,7 @@ fun main() {
     applyOnEach(tab) { element -> println(element) } // pareil que la ligne précédente
     applyOnEach(tab) { println(it) } // pareil que la ligne précédente (on peut utiliser it si la lambda n'a qu'un seul param)
     applyOnEach(tab) { element -> println(element.uppercase()) }
+    applyOnEach(tab) { println(it.uppercase()) } // pareil
     applyOnEach(tab) { element -> println(element.length) }
     // si pas d'autre param,  je peux ne pas mettre de parenthèse
     run/*()*/ {  -> println("ma lambda") }
